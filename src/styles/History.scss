@@ -1,0 +1,10 @@
+.history-container{
+    background-color:aquamarine;
+    flex: 1;
+  }
+
+.history-container-convo{
+    &:not(:last-child){
+        border-bottom:1px solid white;    
+    }
+}

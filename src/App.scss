@@ -14,35 +14,10 @@ html, body, #root{
   height:95vh;
   width:95vw;
 }
-.historyContainer{
-  background-color:aquamarine;
-  flex: 1;
-}
-.chatContainer{
+.chat-container{
   background-color: aqua;
   flex:3;
 
-}
-.convoContainer{
-  display:flex;
-  align-items:center;
-  padding-top:25px;
-  padding-left:25px;
-  flex-direction: row;
-  gap:12px;
-  img{
-    max-width:50px;
-    flex: 1;
-  }
-  span{
-    flex: 4;
-  }
-}
-
-.hrHistory{
-  border-top: 1px solid #ffffff;
-  margin-left:20px;
-  margin-right:20px;
 }
 
 .app-header {

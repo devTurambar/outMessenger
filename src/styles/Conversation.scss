@@ -1,0 +1,33 @@
+.convoContainer{ 
+    background-color: inherit;
+    display:flex;
+    align-items:center;
+    min-height: 70px;
+    padding-left:25px;
+    flex-direction: row;
+    gap:12px;
+    img{
+      max-width:50px;
+      flex: 1;
+    }
+    span{
+      flex: 4;
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: lightgray;
+    }
+    
+    &:not(:last-child){
+        border-bottom:1px solid white;    
+    }
+    /*&:active{
+        background-color: green;
+    }*/
+
+  }
+  //a little darker when selected
+  .convoContainer.selected{
+    background-color:aquamarine;
+    filter: brightness(85%);
+  }

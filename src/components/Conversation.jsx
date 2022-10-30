@@ -1,9 +1,12 @@
 import chat from '../images/chat.png'
-function Conversation ({user}){
+import '../styles/Conversation.scss'
+import { useState } from 'react'    
+
+function Conversation ({user, selected, clicked}){
     return(
-        <div className="convoContainer">
-            <img src={chat} /> 
-            <span>{user}</span>
+        <div className={selected ? "convoContainer selected" : "convoContainer"} onClick={clicked} >
+            <img className="convoContainer-img" src={chat} /> 
+            <span className="convoContainer-name">{user}</span>
         </div>
     )
 }
